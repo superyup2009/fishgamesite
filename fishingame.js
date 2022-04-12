@@ -72,6 +72,7 @@ stopfishbtn.addEventListener("click", () => {
 })
 
 getfishbtn.addEventListener("click", () => {
+
     if(start == 1){
         if(random_n == 1){
             random_n1 = Math.floor(Math.random()*(10-1+1)) + 1;
@@ -148,9 +149,10 @@ getfishbtn.addEventListener("click", () => {
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
             }
-            nowfishtext.style.backgroundColor = 'blue';
-            nowfishtext.textContent = '낚시를 시작해주세요';
-            money_div.innerText = `돈: ${money}원`
+        else{
+            alert("아무것도 낚이지 않았다..")
+        }
+        money_div.innerText = `돈: ${money}원`
     }
     
         
