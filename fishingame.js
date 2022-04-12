@@ -75,9 +75,9 @@ getfishbtn.addEventListener("click", () => {
 
     if(start == 1){
         if(random_n == 1){
-            random_n1 = Math.floor(Math.random()*(12-1+1)) + 1;
+            random_n1 = Math.floor(Math.random()*(13-1+1)) + 1;
             clearInterval(game_start);
-            start = 0
+            
             nowfishtext.style.backgroundColor = 'blue';
             nowfishtext.textContent = '낚시를 시작해주세요';
             if (random_n1 == 1){
@@ -86,97 +86,115 @@ getfishbtn.addEventListener("click", () => {
                 alert("+100원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 2){
+            else if (random_n1 == 2){
                 money += 5800;
                 alert("'바다거북'(이)가 잡혔다!!")
                 alert("+5800원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 3){
+            else if (random_n1 == 3){
                 money += 180000;
                 alert("'백상아리'(이)가 잡혔다!!")
                 alert("+180000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 4){
+            else if (random_n1 == 4){
                 money -= 500;
                 alert("'비닐봉지'(이)가 낚였다..")
                 alert("처리비 -500원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 5){
+            else if (random_n1 == 5){
                 money += 3000;
                 alert("'곰치'(이)가 잡혔다!!")
                 alert("+3000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 6){
+            else if (random_n1 == 6){
                 money += 5000;
                 alert("'갈치'(이)가 잡혔다!!")
                 alert("+5000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 7){
+            else if (random_n1 == 7){
                 money += 15000;
                 alert("'독도새우'(이)가 잡혔다!!")
                 alert("+15000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 8){
+            else if (random_n1 == 8){
                 alert("'물고기 시체'(이)가 낚였다..")
                 alert("+0원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 9){
+            else if (random_n1 == 9){
                 money -= 12000;
                 alert("'폭탄'(이)가 낚였다..")
                 alert("처리비 -12000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 10){
+            else if (random_n1 == 10){
                 money += 1000;
                 alert("'가리비'(이)가 잡혔다!!")
                 alert("+1000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 11){
+            else if (random_n1 == 11){
+                money += 10;
+                alert("'퓨터'(이)가 잡혔다!!")
+                alert("+10원")
+                nowfishtext.style.backgroundColor = 'blue';
+                nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
+            }
+            else if (random_n1 == 12){
+                money += 10000;
+                alert("'평범한해파리'(이)가 잡혔다!!")
+                alert("+10000원")
+                nowfishtext.style.backgroundColor = 'blue';
+                nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
+            }
+            else if (random_n1 == 13){
                 money += 20000;
                 alert("'희귀한해파리'(이)가 잡혔다!!")
                 alert("+20000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
+                start = 0
             }
-            if (random_n1 == 12){
-                money += 5000;
-                alert("'별로인해파리'(이)가 잡혔다!!")
-                alert("+10000원")
-                nowfishtext.style.backgroundColor = 'blue';
-                nowfishtext.textContent = '낚시를 시작해주세요';
-            }
+        
+        money_div.innerText = `돈: ${money}원`
+        }
         else{
             alert("아무것도 낚이지 않았다..")
+            nowfishtext.style.backgroundColor = 'blue';
+            nowfishtext.textContent = '낚시를 시작해주세요';
+            clearInterval(game_start);
+            start = 0;
         }
-        money_div.innerText = `돈: ${money}원`
-    }
     
         
-    }
-    else{
-        nowfishtext.style.backgroundColor = 'blue';
-        nowfishtext.textContent = '낚시를 시작해주세요';
-        start = 0
-        alert("아무것도 낚이지 않았다..")
-        clearInterval(game_start);
     }
     
     
