@@ -75,7 +75,7 @@ getfishbtn.addEventListener("click", () => {
 
     if(start == 1){
         if(random_n == 1){
-            random_n1 = Math.floor(Math.random()*(10-1+1)) + 1;
+            random_n1 = Math.floor(Math.random()*(12-1+1)) + 1;
             clearInterval(game_start);
             start = 0
             nowfishtext.style.backgroundColor = 'blue';
@@ -146,6 +146,20 @@ getfishbtn.addEventListener("click", () => {
                 money += 1000;
                 alert("'가리비'(이)가 잡혔다!!")
                 alert("+1000원")
+                nowfishtext.style.backgroundColor = 'blue';
+                nowfishtext.textContent = '낚시를 시작해주세요';
+            }
+            if (random_n1 == 11){
+                money += 20000;
+                alert("'희귀한해파리'(이)가 잡혔다!!")
+                alert("+20000원")
+                nowfishtext.style.backgroundColor = 'blue';
+                nowfishtext.textContent = '낚시를 시작해주세요';
+            }
+            if (random_n1 == 12){
+                money += 5000;
+                alert("'별로인해파리'(이)가 잡혔다!!")
+                alert("+10000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
             }
