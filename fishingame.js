@@ -3,7 +3,7 @@ stopfishbtn = document.querySelector(".btn-2");
 getfishbtn = document.querySelector(".btn-1");
 nowfishtext = document.querySelector(".div-2")
 let money_div = document.querySelector(".money");
-let start = 0
+let start = 0;
 startbtn.addEventListener("click", () => {
     if(start == 0){
         start = 1;
@@ -66,7 +66,7 @@ function init() {
 stopfishbtn.addEventListener("click", () => {
     nowfishtext.style.backgroundColor = 'blue';
     nowfishtext.textContent = '낚시를 시작해주세요';
-    start = 0
+    start = 0;
 
     clearInterval(game_start);
 })
@@ -86,7 +86,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+100원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 2){
                 money += 5800;
@@ -94,7 +94,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+5800원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 3){
                 money += 180000;
@@ -102,7 +102,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+180000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 4){
                 money -= 500;
@@ -110,7 +110,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("처리비 -500원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 5){
                 money += 3000;
@@ -118,7 +118,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+3000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 6){
                 money += 5000;
@@ -126,7 +126,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+5000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 7){
                 money += 15000;
@@ -134,14 +134,14 @@ getfishbtn.addEventListener("click", () => {
                 alert("+15000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 8){
                 alert("'물고기 시체'(이)가 낚였다..")
                 alert("+0원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 9){
                 money -= 12000;
@@ -149,7 +149,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("처리비 -12000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 10){
                 money += 1000;
@@ -157,7 +157,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+1000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 11){
                 money += 10;
@@ -165,7 +165,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+10원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 12){
                 money += 10000;
@@ -173,7 +173,7 @@ getfishbtn.addEventListener("click", () => {
                 alert("+10000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
             else if (random_n1 == 13){
                 money += 20000;
@@ -181,10 +181,11 @@ getfishbtn.addEventListener("click", () => {
                 alert("+20000원")
                 nowfishtext.style.backgroundColor = 'blue';
                 nowfishtext.textContent = '낚시를 시작해주세요';
-                start = 0
+                start = 0;
             }
         
         money_div.innerText = `돈: ${money}원`
+        start = 0;
         }
         else{
             alert("아무것도 낚이지 않았다..")
