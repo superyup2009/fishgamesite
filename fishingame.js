@@ -6,9 +6,10 @@ let money_div = document.querySelector(".money");
 let start = 0;
 startbtn.addEventListener("click", () => {
     if(start == 0){
-        start = 1;
         nowfishtext.textContent = '낚시하기 딱 좋은 날씨네!';
         nowfishtext.style.backgroundColor = 'green';
+        start = 1;
+        
         init();
     }
 })
